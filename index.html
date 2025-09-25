@@ -31,7 +31,7 @@
             border-right: .15em solid #333;
             margin: 0 auto;
             padding-right: 5px;
-            letter-spacing: .15em;
+            letter-spacing: .1em;
             animation: 
                 blink-caret .75s step-end infinite;
             /* ✨ 중요 수정: 초기 텍스트가 보이지 않도록 폰트 색상을 투명하게 설정 */
@@ -88,7 +88,7 @@
                     element.classList.add('finished'); // 커서 제거 및 애니메이션 멈춤
                     subElement.style.opacity = 1; // 서브 텍스트 나타나게 함
                 }
-            }, 100); // 100ms 간격
+            }, 50); // 50ms 간격
         }
         // DOM이 준비되었을 때 실행 (로컬 환경에서 더 안정적)
         document.addEventListener('DOMContentLoaded', typeWriter);
